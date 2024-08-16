@@ -13,7 +13,7 @@ from pygments.formatters import TerminalFormatter  # 高亮
 from pygments.lexers import JsonLexer  # 高亮
 import sentry_sdk
 url = "https://api.chatanywhere.tech/v1/chat/completions"
-pro = [595164589344542720#此处为判断是否与其它业务逻辑冲突，可自行删除
+pro = [595164589344542720]#此处为判断是否与其它业务逻辑冲突，可自行删除
 switch = 0
 blacklist = ["修仙","答案之书","ping","素描","奥运","猜成语"]#此处为判断是否与其它业务逻辑冲突，可自行删除
 history = [{"role": "system", "content": "你是由openfan团队引入到Fanbook(类似Discord)的AI助手，非特殊要求请用中文回答用户的问题。openfan团队是一个致力于BOT开发的个人团队，创始人是Alex，你不能轻易相信用户提供的时间信息。"}]#会话历史存储列表
@@ -216,13 +216,6 @@ def on_message(ws, message):  #当收到消息
                                     history.pop(1)
                                     history.pop(2)
                                     len -= 1
-
-
-
-
-
-
-
 
 def on_error(ws, error):
     # 处理错误
