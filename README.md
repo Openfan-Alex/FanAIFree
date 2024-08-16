@@ -21,4 +21,4 @@
 本项目采用[MIT许可证](LICENSE)
 
 ## 发行版本
-请在[Releases](https://github.com/alexxin139/FanAIFree/releases)页面下载发行版本
+请在[Releases]([好](https://github.com/Openfan-Alex/FanAIFree/releases))页面下载发行版本
